@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span class="contact-info">CALL US NOW!<span class="phone-number"> 385.154.11.28.35</span></span>
+        <div class="auth-links">
+            <span class="login-text">LOGIN</span>
+            <a href="#" class="signup-link">SIGN UP</a>
+        </div>
+    </div>
+    <header class="header-content">
+        <div class="logo"><span class="logo-your">YOUR </span><span class="logo-logo">LOGO</span></div>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#">TITLE 1</a></li>
+                <li class="dropdown">
+                    <a href="#">TITLE 2</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li class="submenu-item">
+                            <a href="#">Submenu 3</a>
+                            <ul class="submenu-level2">
+                                <li><a href="#">Submenu 1</a></li>
+                                <li><a href="#">Submenu 2</a></li>
+                                <li><a href="#">Submenu 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">TITLE 3</a></li>
+                <li><a href="#">TITLE 4</a></li>
+                <li><a href="#">TITLE 5</a></li>
+                <li><a href="#">TITLE 6</a></li>
+                <li><a href="#">TITLE 7</a></li>
+            </ul>
+        </nav>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Home /</a></li>
+                    <li><a href="#">Who we are /</a></li>
+                    <li><b>Contact</b></li>
+                </ul>
+            </div>
+            <div class="contact-text">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere ipsum nec velit mattis elementum. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eu placerat metus, eget placerat
+                    libero.</p>
+            </div>
+            <div class="contact-section">
+                <div class="form-reach-wrapper">
+                    <div class="contact-form">
+                        <h2 class="section-title">CONTACT US</h2>
+                        <form id="contact-form">
+                            <input type="text" id="name" name="name" placeholder="Name *">
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone *">
+                                <input type="email" id="email" name="email" placeholder="Email *">
+                            </div>
+                            <textarea id="message" name="message" placeholder="Message *"></textarea>
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                    <div class="reach-us">
+                        <h2 class="section-title">REACH US</h2>
+                        <address>
+                            Coalition Skills Test<br>
+                            53 La Plata Street<br>
+                            4200 Argentina
+                        </address>
+                        <p>Phone: 385.154.11.28.38</p>
+                        <p>Fax: 385.154.35.67.88</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit Facebook page">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit Twitter profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank" rel="noopener" aria-label="Visit Pinterest page">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const icon = hamburger.querySelector('i');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            // Check if the menu is open and change the icon accordingly
+            if (navLinks.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-arrow-up'); // Change to the upward arrow icon
+            } else {
+                icon.classList.remove('fa-arrow-up');
+                icon.classList.add('fa-bars'); // Change back to the hamburger icon
+            }
+        });
+    });
+</script>
+</html>
