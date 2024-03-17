@@ -18,7 +18,7 @@ In the age of digitalization, where online presence has become as crucial as the
 
 Below is a screenshot of the contact page layout:
 
-![Contact Page Screenshot](img/screenshot.png)
+![Contact Page Screenshot](img_readme/screenshot.png)
 
 ## Importance in Our Daily Lives
 
